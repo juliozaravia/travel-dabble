@@ -1,0 +1,435 @@
+/*
+ * Project: TravelDabble 
+ * File: Styles - UI style file
+ * Description: It allows us to set the visual styles of the webapp's user interface. 
+ * @author
+ * Julio Zaravia <julio.zaravia.dev@gmail.com>
+ */
+
+/**
+* ==============================================
+* General
+* ==============================================
+*/
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 1.4em;
+	color: #444444;
+}
+
+.title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 2em;
+}
+
+.title--destination {
+	color: #532ca0;
+}
+
+.main {
+	width: 100vw;
+	height: 100vh;
+	background-color: #ffffff;
+	position: relative;
+}
+
+.container,
+.loader {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: rgb(79, 40, 157);
+	background: linear-gradient(145deg, rgba(79, 40, 157, 1) 0%, rgba(83, 44, 160, 1) 50%, rgba(146, 39, 255, 1) 100%);
+}
+
+.show {
+	opacity: 1;
+	display: block;
+}
+
+.hide {
+	opacity: 0;
+	display: none;
+}
+
+/**
+* ==============================================
+* Status
+* ==============================================
+*/
+
+.status {
+	font-family: "Montserrat", sans-serif;
+	color: #ffffff;
+	width: 100%;
+	height: 5%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	font-size: 0.7em;
+	padding: 7px;
+	vertical-align: middle;
+}
+
+.status--ok {
+	background-color: #0eba05;
+}
+
+.status--error {
+	background-color: #ff0000;
+}
+
+.status--disable {
+	background-color: #111111;
+}
+
+/**
+* ==============================================
+* Containers
+* ==============================================
+*/
+
+.origin,
+.destination {
+	height: 95%;
+	padding: 50px;
+	top: 0;
+	position: absolute;
+}
+
+.origin {
+	width: 35%;
+	/* background-color: #532ca0; */
+	background: rgb(79, 40, 157);
+	background: linear-gradient(145deg, rgba(79, 40, 157, 1) 0%, rgba(83, 44, 160, 1) 50%, rgba(146, 39, 255, 1) 100%);
+	left: 0;
+	color: #ffffff;
+}
+
+.destination {
+	width: 65%;
+	background-color: #ffffff;
+	right: 0;
+}
+
+/**
+* ==============================================
+* Origin container
+* ==============================================
+*/
+
+.info,
+.search {
+	margin-top: 15px;
+	width: 100%;
+}
+
+.info--separator {
+	margin-top: 40px !important;
+}
+
+.info__flag,
+.info__data {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.info__flag {
+	width: 40%;
+}
+
+.info__flag img {
+	border: 1px solid #3f1f80;
+}
+
+.info__data {
+	width: 60%;
+	padding-left: 5%;
+}
+
+.info__item--country {
+	font-family: "Montserrat", sans-serif;
+}
+
+.info__item--accuracy {
+	margin-top: 6px;
+}
+
+.info__item--accuracy span {
+	font-size: 0.8em;
+	padding: 5px 8px;
+	border-radius: 10px;
+	background-color: rgb(230, 83, 16);
+}
+
+.picture {
+	position: absolute;
+	z-index: 1000;
+	bottom: 0;
+	left: 0px;
+	width: 500px;
+}
+
+/**
+* ==============================================
+* Destination container
+* ==============================================
+*/
+
+.search__selector,
+.search__action,
+.search__main,
+.search__secondary {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.search__selector {
+	width: 68%;
+	position: relative;
+}
+
+.search__action {
+	width: 32%;
+	padding-left: 3%;
+	position: relative;
+}
+.select {
+	border-bottom: 1px solid #999999;
+}
+
+.search__selector select {
+	width: 100%;
+	padding: 10px;
+	height: 60px;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	border: 0 !important;
+	background-image: none;
+	cursor: pointer;
+}
+
+.search__selector::after {
+	content: "\25BC";
+	position: absolute;
+	top: 26px;
+	right: 0;
+	padding: 0 10px;
+	cursor: pointer;
+	pointer-events: none;
+	-webkit-transition: 0.25s all ease;
+	-o-transition: 0.25s all ease;
+	transition: 0.25s all ease;
+	font-size: 0.6em;
+}
+
+.search__button {
+	font-family: "Montserrat", sans-serif;
+	width: 60%;
+	display: inline-block;
+	height: 60px;
+	text-align: center;
+	padding: 14px;
+	color: #ffffff;
+	background-color: rgb(230, 83, 16);
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 0.9em;
+}
+
+.search__button:hover {
+	background-color: rgb(253, 102, 32);
+}
+
+.search__button:active {
+	background-color: rgb(184, 65, 10);
+}
+
+.search__flag,
+.search__data {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.search__flag {
+	width: 20%;
+	vertical-align: top;
+	font-size: 0;
+}
+
+.search__data {
+	width: 80%;
+	padding-left: 3%;
+}
+
+.search__main {
+	width: 68%;
+}
+
+.search__secondary {
+	width: 32%;
+	padding-left: 3%;
+	color: #ffffff;
+}
+
+.search__flag,
+.search__data {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.search__flag {
+	width: 30%;
+}
+
+.search__flag img {
+	border: 1px solid #cccccc;
+}
+
+.search__data {
+	width: 70%;
+	padding-left: 3%;
+}
+
+.search__data--country {
+	font-family: "Montserrat", sans-serif;
+}
+
+.search__data--region span:first-child,
+.search__data--capital span:first-child {
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.9em;
+}
+
+.search__data--region,
+.search__data--capital {
+	margin-top: 4px;
+}
+
+.search__card {
+	padding: 15px 20px;
+	/* background-color: #532ca0; */
+	background: rgb(79, 40, 157);
+	background: linear-gradient(145deg, rgba(79, 40, 157, 1) 0%, rgba(83, 44, 160, 1) 50%, rgba(146, 39, 255, 1) 100%);
+	border-radius: 20px;
+}
+
+.search__card:nth-child(n + 2) {
+	margin-top: 20px;
+}
+
+.search__card--title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.9em;
+}
+
+.search__card--data {
+	font-size: 0.9em;
+	margin-top: 3px;
+}
+
+.search__info {
+	border: 1px solid #cccccc;
+	margin-top: 30px;
+}
+
+.search__info .search__row:nth-child(n + 2) {
+	border-top: 1px solid #cccccc;
+}
+
+.search__row--title,
+.search__row--desc {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.search__row--title {
+	font-family: "Montserrat", sans-serif;
+	width: 35%;
+	background-color: #eeeeee;
+	padding: 12px 15px;
+	font-size: 0.9em;
+}
+
+.search__row--desc {
+	width: 65%;
+	padding: 0 15px;
+}
+
+/**
+* ==============================================
+* Loader
+* ==============================================
+*/
+
+.spinner {
+	color: #ffffff;
+	position: absolute;
+	width: 150px;
+	height: 80px;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	margin-top: -80px;
+	margin-left: -75px;
+}
+
+.spinner div:nth-child(2) {
+	margin-top: 10px;
+}
+
+.dot-windmill {
+	position: relative;
+	left: 47%;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	color: #ffffff;
+	transform-origin: 5px 15px;
+	animation: dotWindmill 2s infinite linear;
+}
+
+.dot-windmill::before,
+.dot-windmill::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+}
+
+.dot-windmill::before {
+	left: -8.66px;
+	top: 15px;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	color: #ffffff;
+}
+
+.dot-windmill::after {
+	left: 8.66px;
+	top: 15px;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	color: #ffffff;
+}
+
+@keyframes dotWindmill {
+	0% {
+		transform: rotateZ(0deg) translate3d(0, 0, 0);
+	}
+	100% {
+		transform: rotateZ(720deg) translate3d(0, 0, 0);
+	}
+}

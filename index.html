@@ -1,0 +1,144 @@
+<!--*
+ * Project: TravelDabble 
+ * File: Index - HTML structure file
+ * Description: It allows us to organize the structure of the webapp and determine the elements that we will use. 
+ * @author
+ * Julio Zaravia <julio.zaravia.dev@gmail.com>
+ *-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./styles/reset.css">
+	<link rel="stylesheet" href="./styles/main.css">
+	<link rel="stylesheet" href="./styles/media.css">
+
+	<script defer type="module" src="./scripts/main.js"></script>
+	<title>TravelDabble</title>
+</head>
+
+<body>
+
+	<main class="main">
+		<section class="loader show">
+			<div class="spinner">
+				<div>Loading</div>
+				<div class="dot-windmill"></div>
+			</div>
+		</section>
+		<section class="container hide">
+			<section class="origin">
+				<h1 class="title">👋 Welcome!</h1>
+				<div class="info">
+					You're connecting from:
+				</div>
+				<div class="info">
+					<div class="info__flag">
+						<img src="./images/default-flag-1.png" alt="Default flag" class="origin-flag">
+					</div><div class="info__data">
+						<div class="info__item info__item--country">
+							<span class="origin-country">Your country</span>
+						</div>
+						<div class="info__item info__item--city">
+							<span class="origin-city">Your city</span>
+						</div>
+						<div class="info__item info__item--accuracy">
+							<span class="origin-accuracy">The accuracy</span>
+						</div>
+					</div>
+				</div>
+				<img src="./images/traveler.png" alt="TravelDabble" class="picture">
+			</section><section class="destination">
+				<h1 class="title title--destination">🛫 Where are you going?</h1>
+				<div class="info">
+					<div class="search__selector">
+						<div class="select">
+							<select name="" id="destination-selector">
+								<option value='SYD'>Select your destination here</option>
+							</select>
+						</div>
+					</div><div class="search__action">
+						<a href="#" class="search__button">Search</a>
+					</div>
+				</div>
+				<div class="info info--separator">
+					<div class="search__main">
+						<div>
+							<div class="search__flag">
+								<img src="./images/default-flag-2.png" alt="Default flag" class="destination-flag">
+							</div><div class="search__data">
+								<div class="search__data--country">
+									🌍 <span class="destination-country">Your destination country</span>
+								</div>
+								<div class="search__data--region">
+									<span>Region: </span>
+									<span class="destination-region">Your destination region</span>
+								</div>
+								<div class="search__data--capital">
+									<span>Capital: </span>
+									<span class="destination-capital">Your destination capital</span>
+								</div>
+							</div>
+						</div>
+						<div class="search__info">
+							<div class="search__row">
+								<div class="search__row--title">
+									Currency
+								</div><div class="search__row--desc">
+									<span class="destination-currency">Currency of your destination</span>
+								</div>
+							</div>
+							<div class="search__row">
+								<div class="search__row--title">
+									Exchange rate
+								</div><div class="search__row--desc">
+									<span class="destination-exchange-rate">Exchange rate of your destination</span>
+								</div>
+							</div>
+							<div class="search__row">
+								<div class="search__row--title">
+									Last update UTC
+								</div><div class="search__row--desc">
+									<span class="destination-exchange-rate-date">Last date of the exchange rate</span>
+								</div>
+							</div>
+						</div>
+					</div><div class="search__secondary">
+						<div class="search__card">
+							<div class="search__card--title">Population</div>
+							<div class="search__card--data">
+								👨‍👩‍👦 <span class="destination-population">0.0 M</span>
+							</div>
+						</div>
+						<div class="search__card">
+							<div class="search__card--title">Language</div>
+							<div class="search__card--data">
+								🗣 <span class="destination-language">Destination language</span>
+							</div>
+						</div>
+						<div class="search__card">
+							<div class="search__card--title">Calling code</div>
+							<div class="search__card--data">
+								📞 <span class="destination-calling-code">Destination code</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<section class="status status--disable">Status &lt;Fetching data&gt;</section>
+	</main>
+
+</body>
+
+</html>

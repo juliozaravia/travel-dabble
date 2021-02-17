@@ -1,0 +1,248 @@
+/*
+ * Project: TravelDabble 
+ * File: Styles - Style file for mobile responsive design 
+ * Description: It allows us to control the way the UI is displayed on mobile device screens.
+ * Note: If you're a web designer with experience in CSS and you're looking at my CSS code for responsive design I apologize, I'm learning :^).
+ * @author
+ * Julio Zaravia <julio.zaravia.dev@gmail.com>
+ */
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 320px) {
+	.title {
+		font-size: 1.4em;
+		line-height: 1.2em;
+	}
+	.origin,
+	.destination {
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.origin {
+		padding: 60px 20px 20px;
+	}
+	.destination {
+		padding: 20px;
+	}
+	.status {
+		position: fixed;
+		top: 0;
+		left: 0;
+		min-height: 7%;
+		padding: 7px 5px;
+	}
+	.picture {
+		display: none;
+		visibility: hidden;
+	}
+	.info__flag {
+		width: 100%;
+	}
+	.info__data {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 20px;
+	}
+	.search__main {
+		width: 100%;
+	}
+	.search__secondary {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 30px;
+	}
+	.search__button {
+		width: 100%;
+	}
+	.search__flag {
+		width: 100%;
+	}
+	.search__data {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 20px;
+	}
+	.search__selector {
+		width: 100%;
+	}
+	.search__action {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 20px;
+	}
+	.search__row--title {
+		width: 100%;
+		padding: 5px;
+	}
+	.search__row--desc {
+		width: 100%;
+		padding: 5px;
+	}
+}
+
+@media only screen and (min-device-width: 321px) and (max-device-width: 480px) {
+	.title {
+		font-size: 1.6em;
+		line-height: 1.2em;
+	}
+	.origin,
+	.destination {
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.origin {
+		padding: 60px 20px 20px;
+	}
+	.destination {
+		padding: 20px;
+	}
+	.status {
+		position: fixed;
+		top: 0;
+		left: 0;
+		min-height: 5%;
+		padding: 7px 5px;
+	}
+	.picture {
+		display: none;
+		visibility: hidden;
+	}
+	.info__flag {
+		width: 100%;
+	}
+	.info__data {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 20px;
+	}
+	.search__main {
+		width: 100%;
+	}
+	.search__secondary {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 30px;
+	}
+	.search__button {
+		width: 100%;
+	}
+	.search__flag {
+		width: 100%;
+	}
+	.search__data {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 20px;
+	}
+	.search__selector {
+		width: 100%;
+	}
+	.search__action {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 20px;
+	}
+	.search__row--title {
+		width: 100%;
+		padding: 5px;
+	}
+	.search__row--desc {
+		width: 100%;
+		padding: 5px;
+	}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+	.title {
+		font-size: 1.2em;
+	}
+	.info__flag {
+		width: 100%;
+	}
+	.info__data {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 20px;
+	}
+	.origin,
+	.destination {
+		padding: 30px;
+	}
+	.picture {
+		display: none;
+		visibility: hidden;
+	}
+	.search__button {
+		width: 100%;
+	}
+	.search__main {
+		width: 100%;
+	}
+	.search__secondary {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 30px;
+	}
+	.destination {
+		overflow-y: auto;
+	}
+	.search__flag {
+		width: 100%;
+	}
+	.search__data {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 20px;
+	}
+	.status {
+		padding: 15px 5px;
+	}
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+	.title {
+		font-size: 1.6em;
+	}
+	.info__flag {
+		width: 100%;
+	}
+	.info__data {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 20px;
+	}
+	.origin,
+	.destination {
+		padding: 30px;
+	}
+	.picture {
+		display: none;
+		visibility: hidden;
+	}
+	.search__button {
+		width: 100%;
+	}
+	.search__main {
+		width: 100%;
+	}
+	.search__secondary {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 30px;
+	}
+	.destination {
+		overflow-y: auto;
+	}
+	.search__flag {
+		width: 100%;
+	}
+	.search__data {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 20px;
+	}
+	.status {
+		padding: 22px 7px;
+	}
+}
